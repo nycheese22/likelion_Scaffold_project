@@ -1,0 +1,23 @@
+<h1>Articles#new</h1>
+<p>Find me in app/views/articles/new.html.erb</p>
+
+<!-- Helper Code -->
+
+<%= form_for Article.new do |f| %>
+	<%= f.label :title%>
+	<%= f.text_field :title %>
+	
+	<%= f.label :content %>
+	<%= f.text_area :content %>
+	
+	<%= f.submit %>
+<% end %>
+
+<!-- HTML Code -->
+
+<!--<form action='/articles' method='POST'>-->
+<!--    <input type='hidden' name='authenticity_token' value="<%#= form_authenticity_token %>"></input><br>-->
+<!--    <input type='text' name='article[title]'></input><br>-->
+<!--    <input type='text' name='article[content]'></input><br>-->
+<!--    <input type='submit'></input>-->
+<!--</form>-->
